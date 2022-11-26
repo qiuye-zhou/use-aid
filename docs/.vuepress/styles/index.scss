@@ -1,0 +1,130 @@
+:root {
+    --c-brand: #65b2fe;
+    --c-brand-light: #4aa4ff;
+    --c-tip: #4aa4ff;
+    --c-text: #1d1d1d;
+}
+.sidebar {
+    .sidebar-items {
+      .sidebar-item.active:not(p.sidebar-heading) {
+        background-color: rgb(246, 246, 246);
+      }
+      padding: 1.5rem 0;
+      li {
+        p {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        p:hover {
+          background-color: rgb(233, 233, 233);
+        }
+        margin: 0 10%;
+        border-top: 1px solid rgb(172, 172, 172, 0.6);
+        .sidebar-item-children {
+            li {
+                border: none;
+            }
+            li:hover {
+              background-color: rgb(233, 233, 233);
+            }
+        }
+      }
+    }
+}
+.sidebar::-webkit-scrollbar {
+  width: 0.2rem;
+}
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #4aa4ff;
+}
+.page-nav {
+    .inner {
+      min-height: 3rem;
+      margin-top: 0;
+      border-top: 1px solid var(--c-border);
+      transition: border-color var(--t-color);
+      padding-top: 1rem;
+      overflow: auto;
+      .prev, .next {
+        padding: 0.5rem;
+        border: 1px solid rgb(169, 169, 169, 0.2);
+        border-radius: 5%;
+      }
+      .prev:hover, .next:hover {
+        border: 1px solid #4aa4ff;
+      }
+    }
+  
+    .prev {
+      float: left;
+      a:before {
+        content: '←';
+      }
+    }
+    .next {
+      float: right;
+      a:after {
+        content: '→';
+      }
+    }
+}
+.home {
+  .feature {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(249,249,249);
+  }
+}
+
+.navbar {
+  .logo {
+    border-radius: 50%;
+  }
+}
+
+html.dark {
+  // brand colors
+  --c-brand: #65b2fe;
+  --c-brand-light: #4aa4ff;
+  --c-bg: rgb(36,36,36);
+  --c-text: #eeeeee;
+  .home {
+    .feature {
+      border-radius: 0.5rem;
+      background-color: rgb(56, 52, 52);
+    }
+  }
+  .sidebar {
+    background-color: rgb(26,26,26);
+    .sidebar-items {
+      .sidebar-item.active:not(p.sidebar-heading) {
+        background-color: rgb(54, 51, 51);
+      }
+      padding: 1.5rem 0;
+      li {
+        p {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        p:hover {
+          background-color: rgb(54, 51, 51);
+        }
+        margin: 0 10%;
+        border-top: 1px solid rgb(172, 172, 172, 0.6);
+        .sidebar-item-children {
+            li {
+                border: none;
+            }
+            li:hover {
+              background-color: rgb(54, 51, 51);
+            }
+        }
+      }
+    }
+}
+}

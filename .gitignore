@@ -1,6 +1,10 @@
 # build:rollup
 dist
 
+# docs:build
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+
 # Logs
 logs
 *.log
