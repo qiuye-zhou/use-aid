@@ -18,15 +18,15 @@ export default [
         input: 'packages/core/index.ts',
         output: [
             {
-                file: './dist/index.cjs',
+                file: './dist/usecj.js',
                 format: 'cjs'
             },
             {
-                file: './dist/index.mjs',
+                file: './dist/index.js',
                 format: 'es'
             },
             {
-                file: './dist/index.iife.js',
+                file: './dist/useiife.js',
                 format: 'iife',
                 name: 'useaid',
                 extend: true,

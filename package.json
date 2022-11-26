@@ -5,6 +5,7 @@
   "repository": "https://github.com/qiuye-zhou/useaid.git",
   "author": "qiuye <1302580865@qq.com>",
   "license": "MIT",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "build:rollup": "rollup --config",
@@ -27,8 +28,14 @@
     "vue-tsc": "^1.0.9",
     "vuepress": "^2.0.0-beta.53"
   },
-  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/usecj.js"
+    }
+  },
+  "types": "dist/index.d.ts",
   "files": [
-    "./dist"
+    "dist/*"
   ]
 }

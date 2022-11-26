@@ -1,9 +1,8 @@
-# build:rollup
-dist
-
 # docs:build
 docs/.vuepress/.cache
 docs/.vuepress/.temp
+
+dist
 
 # Logs
 logs
@@ -15,6 +14,3 @@ lerna-debug.log*
 
 # Dependency directories
 node_modules
-
-# vuepress build output
-.vuepress/dist
