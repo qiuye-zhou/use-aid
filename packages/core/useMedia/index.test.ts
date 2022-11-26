@@ -1,4 +1,4 @@
-// @ts-nocheck
+import { test, expect } from 'vitest';
 import { useMedia } from '.';
 
 test('useMedia test', () => {
