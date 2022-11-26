@@ -1,10 +1,10 @@
 ---
 lang: en-US
 home: true
-title: UseAid
-description: UseAid
+title: Use-Aid
+description: Use-Aid
 sidebar: false
-heroText: 'UseAid'
+heroText: 'Use-Aid'
 actions:
   - text: Get Started
     link: /us/brief.md

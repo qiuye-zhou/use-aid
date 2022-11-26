@@ -1,10 +1,10 @@
 ---
 lang: zh-CN
 home: true
-title: UseAid
-description: UseAid
+title: Use-Aid
+description: Use-Aid
 sidebar: false
-heroText: 'UseAid'
+heroText: 'Use-Aid'
 actions:
   - text: Get Started
     link: /brief.md

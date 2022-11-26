@@ -18,7 +18,7 @@ That is, the media query type, `max` (Browser width smaller than `value` returns
 ## use
 ```ts
 import { ref } from 'vue';
-import { useMedia } from 'useaid';
+import { useMedia } from 'use-aid';
 
 const isMedia = ref(useMedia())
 // or

@@ -4,7 +4,7 @@ title: 简介
 
 # 简介
 
-`useaid`，简单版常用的 vueuse 替代品。
+`use-aid`，简单版常用的 vueuse 替代品。
 
 ## 特性
 
@@ -18,7 +18,7 @@ title: 简介
   <CodeGroupItem title="PNPM">
 
 ```bash:no-line-numbers
-pnpm add useaid
+pnpm add use-aid
 ```
 
   </CodeGroupItem>
@@ -26,14 +26,14 @@ pnpm add useaid
   <CodeGroupItem title="YARN">
 
 ```bash:no-line-numbers
-yarn add useaid
+yarn add use-aid
 ```
 
   </CodeGroupItem>
   <CodeGroupItem title="NPM">
 
 ```bash:no-line-numbers
-npm install useaid
+npm install use-aid
 ```
 
   </CodeGroupItem>

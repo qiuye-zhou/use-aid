@@ -1,8 +1,8 @@
 {
-  "name": "useaid",
+  "name": "use-aid",
   "version": "0.0.1",
   "description": "Utility set for Vue3 only",
-  "repository": "https://github.com/qiuye-zhou/useaid.git",
+  "repository": "https://github.com/qiuye-zhou/use-aid.git",
   "author": "qiuye <1302580865@qq.com>",
   "license": "MIT",
   "main": "dist/index.js",

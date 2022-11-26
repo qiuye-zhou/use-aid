@@ -4,7 +4,7 @@ title: Introduction
 
 # Introduction
 
-`useaid`，A common vueuse substitute for the simple version.
+`use-aid`，A common vueuse substitute for the simple version.
 
 ## Feature
 
@@ -18,7 +18,7 @@ title: Introduction
   <CodeGroupItem title="PNPM">
 
 ```bash:no-line-numbers
-pnpm add useaid
+pnpm add use-aid
 ```
 
   </CodeGroupItem>
@@ -26,14 +26,14 @@ pnpm add useaid
   <CodeGroupItem title="YARN">
 
 ```bash:no-line-numbers
-yarn add useaid
+yarn add use-aid
 ```
 
   </CodeGroupItem>
   <CodeGroupItem title="NPM">
 
 ```bash:no-line-numbers
-npm install useaid
+npm install use-aid
 ```
 
   </CodeGroupItem>

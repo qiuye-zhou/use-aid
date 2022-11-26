@@ -3,17 +3,17 @@ import { sidebar } from './config/sidebar'
 
 export default defineUserConfig({
   lang: '简体中文',
-  title: "UseAid",
+  title: "Use-Aid",
   description: '适用于vue3的程序集',
   locales: {
     '/': {
       lang: '简体中文',
-      title: 'UseAid',
+      title: 'Use-Aid',
       description: '常用的vue3实用程序集',
   },
     '/us/': {
         lang: 'en-US',
-        title: 'UseAid',
+        title: 'Use-Aid',
         description: 'Common vue3 utility sets.',
     },
   },

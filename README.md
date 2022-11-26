@@ -1,15 +1,15 @@
-# useaid
+# use-aid
 Utility set for Vue3 only
 
 # Get started
 ```
-pnpm add useaid
-yarn add useaid
-npm install useaid
+pnpm add use-aid
+yarn add use-aid
+npm install use-aid
 ```
 ```
 import { ref } from 'vue'
-import { useMedia } from 'useaid'
+import { useMedia } from 'use-aid'
 
 const isMedia = ref(useMedia())
 ```

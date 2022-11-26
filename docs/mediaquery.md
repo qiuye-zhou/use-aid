@@ -17,7 +17,7 @@ title: 媒体查询
 ## 使用
 ```ts
 import { ref } from 'vue';
-import { useMedia } from 'useaid';
+import { useMedia } from 'use-aid';
 
 const isMedia = ref(useMedia())
 // or

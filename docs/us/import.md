@@ -4,7 +4,7 @@ title: Import
 
 # Import
 
-There are several ways to introduce useaid into your project.
+There are several ways to introduce use-aid into your project.
 
 ## ESM
 
@@ -13,7 +13,7 @@ If you use [Vite](https://vitejs.dev) Or [Webpack](https://webpack.js.org) You c
 <CodeGroupItem title="PNPM">
 
 ```bash:no-line-numbers
-pnpm add useaid
+pnpm add use-aid
 ```
 
   </CodeGroupItem>
@@ -21,24 +21,24 @@ pnpm add useaid
   <CodeGroupItem title="YARN">
 
 ```bash:no-line-numbers
-yarn add useaid
+yarn add use-aid
 ```
 
   </CodeGroupItem>
   <CodeGroupItem title="NPM">
 
 ```bash:no-line-numbers
-npm install useaid
+npm install use-aid
 ```
 
   </CodeGroupItem>
 
 </CodeGroup>
 
-Then use the following code to import the methods to be used in useaid:
+Then use the following code to import the methods to be used in use-aid:
 
 ```ts
-import { useMedia } from 'useaid';
+import { useMedia } from 'use-aid';
 ```
 
 ## IIFE
@@ -46,18 +46,18 @@ import { useMedia } from 'useaid';
 Just add the following tags to the HTML.
 
 ```html
-<script src="./dist/index.iife"></script>
+<script src="./dist/seiife.iife"></script>
 ```
 
 ## CJS
 
-First, use the package manager to download the useaid:
+First, use the package manager to download the use-aid:
 
 <CodeGroup>
   <CodeGroupItem title="PNPM">
 
 ```bash:no-line-numbers
-pnpm add useaid
+pnpm add use-aid
 ```
 
   </CodeGroupItem>
@@ -65,14 +65,14 @@ pnpm add useaid
   <CodeGroupItem title="YARN">
 
 ```bash:no-line-numbers
-yarn add useaid
+yarn add use-aid
 ```
 
   </CodeGroupItem>
   <CodeGroupItem title="NPM">
 
 ```bash:no-line-numbers
-npm install useaid
+npm install use-aid
 ```
 
   </CodeGroupItem>
@@ -82,5 +82,5 @@ npm install useaid
 Then, import the useeid as the commonjs module:
 
 ```ts
-const useMedia = require('useaid');
+const useMedia = require('use-aid');
 ```
