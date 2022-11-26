@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "description": "Utility set for Vue3 only",
   "repository": "https://github.com/qiuye-zhou/useaid.git",
-  "author": "qiuye <https://github.com/qiuye-zhou>",
+  "author": "qiuye <1302580865@qq.com>",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "scripts": {
     "build:rollup": "rollup --config",
