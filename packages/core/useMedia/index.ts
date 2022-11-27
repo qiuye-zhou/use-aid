@@ -1,4 +1,6 @@
-import { ref, onUnmounted } from 'vue';
+import { tryOnScopeDispose } from '../../shared/tryOnScopeDispose/index';
+import { Ref, ref, watchEffect } from 'vue';
+import { defaultWindow } from '../../config';
 
 /**
  * Media query to determine whether the browser is in the current condition
@@ -7,24 +9,45 @@ import { ref, onUnmounted } from 'vue';
  * @returns Whether it is in the judging state( true || false )
  */
 export const useMedia = (value: number = 768, type: string = 'max') => {
+    const window = defaultWindow;
     if (typeof value !== 'number') throw new Error('The value type should be number');
 
     if (type !== 'max' && type !== 'min') throw new Error('Type should be max or min');
 
-    const isMedia = ref(false);
-    const mediaQuery = matchMedia(`(${type}-width: ${value}px)`);
+    if (!window) throw new Error('Non browser environment');
 
-    isMedia.value = mediaQuery.matches;
+    const isMedia:Ref<boolean> = ref(false);
+    let mediaQuery: MediaQueryList | undefined;
 
-    const handler = () => {
-        isMedia.value = mediaQuery.matches;
+    const clear = () => {
+        if (!mediaQuery) return;
+        if ('removeEventListener' in mediaQuery) {
+            // eslint-disable-next-line no-use-before-define
+            mediaQuery.removeEventListener('change', handler);
+        } else {
+            // @ts-expect-error deprecated API
+            // eslint-disable-next-line no-use-before-define
+            mediaQuery.removeListener(handler);
+        }
     };
 
-    mediaQuery.addEventListener('change', handler);
+    const handler = () => {
+        clear();
 
-    onUnmounted(() => {
-        mediaQuery.removeEventListener('change', handler);
-    });
+        mediaQuery = window.matchMedia(`(${type}-width: ${value}px)`);
+        isMedia.value = mediaQuery.matches;
+
+        if ('addEventListener' in mediaQuery) {
+            mediaQuery.addEventListener('change', handler);
+        } else {
+            // @ts-expect-error deprecated API
+            mediaQuery.addListener(handler);
+        }
+    };
+
+    watchEffect(handler);
+
+    tryOnScopeDispose(() => clear());
 
     return isMedia;
 };

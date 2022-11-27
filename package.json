@@ -1,6 +1,6 @@
 {
   "name": "use-aid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility set for Vue3 only",
   "repository": "https://github.com/qiuye-zhou/use-aid.git",
   "author": "qiuye <1302580865@qq.com>",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-json": "^5.0.1",
+    "@vue/test-utils": "^2.2.4",
     "esbuild": "^0.15.15",
     "eslint-config-qiuye": "^0.0.3",
     "happy-dom": "^7.7.0",
@@ -30,8 +31,8 @@
   },
   "exports": {
     ".": {
-        "import": "./dist/index.js",
-        "require": "./dist/usecj.js"
+      "import": "./dist/index.js",
+      "require": "./dist/usecj.js"
     }
   },
   "types": "dist/index.d.ts",
