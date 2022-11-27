@@ -9,6 +9,6 @@ const isMedia = ref(useMedia(valuetest.value, typetest.value));
 </script>
 <template>
     <div>
-        {{ (isMedia ? 'be in' : 'Not in') + `${typetest}: ${valuetest}` }}
+        {{ (isMedia ? 'be in' : 'Not in') + `  ${typetest}: ${valuetest}` }}
     </div>
 </template>

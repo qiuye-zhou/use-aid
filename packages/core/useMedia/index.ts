@@ -1,4 +1,4 @@
-import { tryOnScopeDispose } from '../../shared/tryOnScopeDispose/index';
+import { tryOnScopeDispose } from '../../shared';
 import { Ref, ref, watchEffect } from 'vue';
 import { defaultWindow } from '../../config';
 
