@@ -1,18 +1,20 @@
 import { tryOnScopeDispose } from '../../shared';
-import { Ref, ref, watchEffect } from 'vue';
+import {
+    Ref, ref, unref, watchEffect
+} from 'vue';
 import { defaultWindow } from '../../config';
 
 /**
  * Media query to determine whether the browser is in the current condition
- * @param value Must be of type number
- * @param type Must be 'max' or 'min'
- * @returns Whether it is in the judging state( true || false )
+ * @param value Must be of type Ref<number> | number
+ * @param type Must be 'max' or 'min' Ref<string> | string
+ * @returns Whether it is in the judging state( true || false ) Ref<boolean>
  */
-export const useMedia = (value: number = 768, type: string = 'max') => {
+export const useMedia = (value: Ref<number> | number = 768, type: Ref<string> | string = 'max') => {
     const window = defaultWindow;
-    if (typeof value !== 'number') throw new Error('The value type should be number');
+    if (typeof unref(value) !== 'number') throw new Error('The value type should be number');
 
-    if (type !== 'max' && type !== 'min') throw new Error('Type should be max or min');
+    if (unref(type) !== 'max' && unref(type) !== 'min') throw new Error('Type should be max or min');
 
     if (!window) throw new Error('Non browser environment');
 
@@ -34,7 +36,7 @@ export const useMedia = (value: number = 768, type: string = 'max') => {
     const handler = () => {
         clear();
 
-        mediaQuery = window.matchMedia(`(${type}-width: ${value}px)`);
+        mediaQuery = window.matchMedia(`(${unref(type)}-width: ${unref(value)}px)`);
         isMedia.value = mediaQuery.matches;
 
         if ('addEventListener' in mediaQuery) {
