@@ -2,7 +2,7 @@
 Utility set for Vue3 only
 
 # Playground
-[StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-awfxbg)
+[StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-sfyasv?file=README.md&terminal=dev)
 
 # Get started
 ```
