@@ -1,6 +1,9 @@
 # use-aid
 Utility set for Vue3 only
 
+# Playground
+[StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-awfxbg)
+
 # Get started
 ```
 pnpm add use-aid
