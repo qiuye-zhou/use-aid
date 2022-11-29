@@ -31,7 +31,9 @@ const change = index => {
             />
         </div>
         <div class="content">
-            <component :is="tableList[active].com" />
+            <div>
+                <component :is="tableList[active].com" />
+            </div>
         </div>
     </div>
 </template>
@@ -52,5 +54,6 @@ const change = index => {
     justify-content: center;
     align-items: flex-start;
     padding-top: 2rem;
+    text-align: center;
 }
 </style>
