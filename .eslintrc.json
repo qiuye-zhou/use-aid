@@ -2,6 +2,7 @@
     "extends": [
         "qiuye"
     ],
+    "ignorePatterns": ["Side.vue"],
     "rules": {
         "unicorn/filename-case": "off"
     }
