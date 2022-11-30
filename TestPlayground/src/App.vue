@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import Side from './components/Side.vue';
 import useMedia from '../../packages/core/useMedia/demo.vue';
 import useLocalStorage from '../../packages/core/useLocalStorage/demo.vue';
+import useDocumentVisibility from '../../packages/core/useDocumentVisibility/demo.vue';
 
 const tableList = [
     {
@@ -12,6 +13,10 @@ const tableList = [
     {
         name: 'useLocalStorage',
         com: useLocalStorage
+    },
+    {
+        name: 'useDocumentVisibility',
+        com: useDocumentVisibility
     }
 ];
 const active = ref(0);

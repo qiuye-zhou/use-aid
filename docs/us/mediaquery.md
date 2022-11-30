@@ -1,5 +1,5 @@
 ---
-title: MediaQuery
+title: useMedia
 ---
 
 # MediaQuery

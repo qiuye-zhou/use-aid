@@ -1,8 +1,8 @@
 ---
-title: 媒体查询
+title: useMedia
 ---
 
-# 媒体查询
+# useMedia
 
 ## 参数
 `useMedia(value, type) => vue.Ref<boolean>`

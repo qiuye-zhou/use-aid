@@ -3,5 +3,6 @@ export const sidebar = [
     'import',
     'mediaquery',
     'useLocalStorage',
+    'useDocumentVisibility',
     'type',
 ]
