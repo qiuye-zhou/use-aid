@@ -17,7 +17,7 @@
     "@rollup/plugin-json": "^5.0.1",
     "@vue/test-utils": "^2.2.4",
     "esbuild": "^0.15.15",
-    "eslint-config-qiuye": "^0.0.3",
+    "eslint-config-qiuye": "^0.0.4",
     "happy-dom": "^7.7.0",
     "rollup": "^3.4.0",
     "rollup-plugin-dts": "^5.0.0",
