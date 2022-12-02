@@ -4,5 +4,6 @@ export const sidebar = [
     'mediaquery',
     'useLocalStorage',
     'useDocumentVisibility',
+    'useDateFormat',
     'type',
 ]

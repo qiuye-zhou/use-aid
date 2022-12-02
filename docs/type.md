@@ -5,6 +5,7 @@ title: 类型
 # 类型
 
 ```ts
+import * as vue from 'vue';
 import { Ref } from 'vue';
 
 /**
@@ -35,5 +36,22 @@ type LocalStorageType = {
  */
 declare const useLocalStorage: () => LocalStorageType;
 
-export { LocalStorageType, storageType, useLocalStorage, useMedia };
+/**
+ *
+ * @param document
+ */
+declare const useDocumentVisibility: (document?: Document | undefined) => Ref<DocumentVisibilityState>;
+
+type DateType = Date | string | number;
+declare const formatdate: (date: Date, formatstr: string) => string;
+declare const normalized: (date: DateType) => Date;
+/**
+ *
+ * @param date new Date() => Date 对象 | (new Date().geTime() | Date.now()) => 传入一个时间的格林威治时间数值
+ * @param formatstr 匹配格式
+ * @returns
+ */
+declare const useDateFormat: (date: DateType, formatstr?: string | Ref) => vue.ComputedRef<string>;
+
+export { DateType, LocalStorageType, formatdate, normalized, storageType, useDateFormat, useDocumentVisibility, useLocalStorage, useMedia };
 ```

@@ -4,6 +4,7 @@ import Side from './components/Side.vue';
 import useMedia from '../../packages/core/useMedia/demo.vue';
 import useLocalStorage from '../../packages/core/useLocalStorage/demo.vue';
 import useDocumentVisibility from '../../packages/core/useDocumentVisibility/demo.vue';
+import useDateFormat from '../../packages/core/useDateFormat/demo.vue';
 
 const tableList = [
     {
@@ -17,6 +18,10 @@ const tableList = [
     {
         name: 'useDocumentVisibility',
         com: useDocumentVisibility
+    },
+    {
+        name: 'useFormatDate',
+        com: useDateFormat
     }
 ];
 const active = ref(0);
