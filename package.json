@@ -14,7 +14,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-json": "^6.0.0",
     "@vue/test-utils": "^2.2.4",
     "esbuild": "^0.16.0",
     "eslint-config-qiuye": "^0.0.4",
