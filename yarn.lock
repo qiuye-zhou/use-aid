@@ -2172,9 +2172,9 @@ gray-matter@^4.0.3:
     strip-bom-string "^1.0.0"
 
 happy-dom@^9.0.0:
-  version "9.1.9"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-9.1.9.tgz#d369f0086c67a8acdac8756cd3d4edf6054ac98d"
-  integrity sha512-OMbnoknA7iNNG/5fwt1JckCKc53QLLFo2ljzit1pCV9SC1TYwcQj0obq0QUTeqIf2p2skbFG69bo19YoSj/1DA==
+  version "9.9.2"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-9.9.2.tgz#637bd9f1d98d70da77b13be1e2f8b8301a96f29a"
+  integrity sha512-E+FouJ18tckCe04ky6mMtNEGGoXZrY+UFqHICNarQB+fCb4RtZeRbp2IOmoIYaQRjb5Iu3ChLNsLBnB8aA3vjA==
   dependencies:
     css.escape "^1.5.1"
     he "^1.2.0"
