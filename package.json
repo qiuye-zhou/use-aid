@@ -19,7 +19,7 @@
     "esbuild": "^0.17.0",
     "eslint-config-qiuye": "^0.0.4",
     "happy-dom": "^9.0.0",
-    "rollup": "^3.4.0",
+    "rollup": "^4.0.0",
     "rollup-plugin-dts": "^5.0.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "typescript": "^5.0.0",
